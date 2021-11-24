@@ -4,13 +4,25 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-helmet": "^6.1.0",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^10.1.1"
   },
   "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.4",
+    "@types/koa-morgan": "^1.0.5",
+    "@types/koa-router": "^7.4.4",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "start-dev": "nodemon --watch *.ts --exec ts-node src/index.ts"
   }
 }
